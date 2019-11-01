@@ -34,7 +34,7 @@ axios.get(`https://api.github.com/users/lyndsiWilliams`)
           user, and adding that card to the DOM.
 */
 
-const followersArray = ['ArianaShackelford', 'tygedavis', 'SeeStephSay', 'MatthewCebenka'];
+const followersArray = ['ArianaShackelford', 'tygedavis', 'jason-glassbrook', 'SeeStephSay', 'nathan-saygers', 'MatthewCebenka'];
 
 followersArray.forEach(follower => {
     axios.get(`https://api.github.com/users/${follower}`)
@@ -67,9 +67,6 @@ followersArray.forEach(follower => {
 
 // Grab parent element
 const cards = document.querySelector('.cards');
-
-// // Loop through data
-cards.appendChild(createComponent(cards.gitLink));
 
 // Component function
 
